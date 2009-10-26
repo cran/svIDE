@@ -1,5 +1,6 @@
 "guiCallTip" <-
-function(code, file = NULL, onlyargs = FALSE, width = 60, location = FALSE) {
+function (code, file = NULL, onlyargs = FALSE, width = 60, location = FALSE)
+{
     # This is an interface to CallTip for external programs
     # Clear ::SciViewsR_CallTip
     .Tcl("set ::SciViewsR_CallTip {}")
@@ -36,18 +37,18 @@ function(code, file = NULL, onlyargs = FALSE, width = 60, location = FALSE) {
 }
 
 "guiComplete" <-
-function(code, file = NULL, givetype = FALSE, sep = "|") {
+function (code, file = NULL, sep = "|")
+{
     # This is an interfacte to Complete for external programs
     # Clear ::SciViewsR_Complete
     .Tcl("set ::SciViewsR_Complete {}")
 
     # Using a callback, all args are strings => convert
     if (length(file) == 0 || file == "" || file == "NULL") file <- NULL
-    givetype <- as.logical(givetype[1])
     sep = sep[1]
 
     # Get the completion list
-	clist <- Complete(code, givetype = givetype, sep = sep)
+	clist <- Complete(code, sep = sep)
 
 	# Copy the result to a Tcl variable
     .Tcl(paste("set ::SciViewsR_Complete {", clist, "}", sep = ""))
@@ -68,7 +69,8 @@ function(code, file = NULL, givetype = FALSE, sep = "|") {
 }
 
 "guiDDEInstall" <-
-function() {
+function ()
+{
     # Register a dde server for R and install callbacks for serveur functions
 
     # Make sure tcl/tk dde is operational
@@ -76,8 +78,9 @@ function() {
 		return("DDE not installed: this is not Windows!")
 	if (!capabilities("tcltk"))
 		return("DDE not installed: this version of R cannot use Tcl/Tk!")
-    if (!require(tcltk))
-		return("DDE not installed: impossible to load tcltk package!")
+    # Not needed, since tcltk is now imported in NAMESPACE!
+	#if (!require(tcltk))
+	#	return("DDE not installed: impossible to load tcltk package!")
 	tclRequire("dde", warn = TRUE)
 	# Should be installed by default with the tcltk package under Windows
 
@@ -108,7 +111,7 @@ function() {
 
     # guiComplete()... Take care: must be adapted if you change guiComplete()!
     res <- .Tcl.args(guiComplete)
-    .Tcl(paste("proc guiComplete {code {file \"\"} {givetype FALSE}",
+    .Tcl(paste("proc guiComplete {code {file \"\"}",
 		" {sep |} }", gsub("%", "$", res), sep = ""))
 
     # Done

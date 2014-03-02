@@ -1,11 +1,11 @@
-fff7669ad2f39bc9c547ef1f43d07bff *DESCRIPTION
+54545806e09428a0e1f6022595340d22 *DESCRIPTION
 b1789c4588cdb019d83b1a18b39ee581 *NAMESPACE
-5baede0ab62c7d264717a83f694d1d10 *NEWS
-76cb5fbf72a51b4c63a6100d04afad12 *R/createCallTipFile.R
+e426f233ded99bca52e2cef1380f2064 *NEWS
+b7735cf9096ce63a09405bf6bb91e937 *R/createCallTipFile.R
 68ef35f5cf90cc029b9d7403ed91e27c *R/createSyntaxFile.R
 686d333195ce09f11e888031cf7bb8ff *R/getFunctions.R
 6300eaf7a583fe7cf09f003531fb0c3c *R/getKeywords.R
-1be6fb5b21ec9b3235fe567d96cd18d6 *R/guiDDEInstall.R
+49ee2c5533005cafcf2f1a0f50de9dec *R/guiDDEInstall.R
 7c2e7da607ba301021fa3542c4000cd8 *R/kpfTranslate.R
 c4dcb8823c05455472888ed19b0d094e *R/makeIconGallery.R
 c78724cd33e47776586bbb709b6dd92c *R/sourceFormat.R
@@ -16,7 +16,7 @@ a6eefbf6889b92eedf596520ad195072 *man/Source-deprecated.Rd
 457df32c7dc8a28adc8fe08d0b5e066e *man/createSyntaxFile.Rd
 a9b2423496d534229fa070d1a58be47e *man/getFunctions.Rd
 753621203347f23d0d1e004721affda8 *man/getKeywords.Rd
-c2195d2124a04233b6246e68758e2b7b *man/guiDDEInstall.Rd
+dada1f31365d86bfa440da39a5d20cb6 *man/guiDDEInstall.Rd
 367df50eba707fbfeb7924a995d41c2f *man/kpfTranslate.Rd
 5e0d22d13d7af71a4bc95d2e71fcffd2 *man/makeIconGallery.Rd
 6a2c420d0cd60a07217c029003ee6ecb *man/sourceFormat.Rd

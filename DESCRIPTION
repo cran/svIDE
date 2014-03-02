@@ -1,6 +1,6 @@
 Package: svIDE
 Type: Package
-Version: 0.9-51
+Version: 0.9-52
 Date: 2014-03-02
 Title: SciViews GUI API - IDE and code editor functions
 Author: Philippe Grosjean [aut, cre]
@@ -13,7 +13,7 @@ Description: Function for the GUI API to interact with external IDE/code editors
 License: GPL-2
 URL: http://www.sciviews.org/SciViews-R
 BugReports: https://r-forge.r-project.org/tracker/?group_id=194
-Packaged: 2014-03-02 09:14:42 UTC; phgrosjean
+Packaged: 2014-03-02 12:25:44 UTC; phgrosjean
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2014-03-02 12:40:48
+Date/Publication: 2014-03-03 14:33:30

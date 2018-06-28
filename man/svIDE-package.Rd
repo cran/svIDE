@@ -3,7 +3,7 @@
 \alias{svIDE}
 \docType{package}
 
-\title{ SciViews GUI API - IDE and code editor functions }
+\title{ Functions to Ease Interactions Between R and IDE or Code Editors }
 \description{
   Function for the GUI API to interact with external IDE/code editors.
 }
@@ -11,8 +11,8 @@
   \tabular{ll}{
     Package: \tab svIDE\cr
     Type: \tab Package\cr
-    Version: \tab 0.9-52\cr
-    Date: \tab 2014-03-02\cr
+    Version: \tab 0.9-54\cr
+    Date: \tab 2018-06-28\cr
     License: \tab GPL 2 or above, at your convenience\cr
   }
   % TODO: add description of main functions here. Also add examples
